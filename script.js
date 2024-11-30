@@ -1,5 +1,5 @@
 const userData = [
-    { username: "amk1", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ1", balance: 10, lastbackup: "01/12/2024"},
+    { username: "@Senior_Achiever", wallet: "0xfb9FF3146EFf868fA2A94f8Cadd69A09166c3F5a", balance: 1000, lastbackup: "01/12/2024"},
     { username: "amk2", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ2", balance: 20, lastbackup: "01/12/2024"},
     { username: "amk3", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ3", balance: 30, lastbackup: "01/12/2024" },
     { username: "amk4", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ4", balance: 40, lastbackup: "01/12/2024" },
