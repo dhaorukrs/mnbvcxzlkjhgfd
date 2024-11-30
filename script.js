@@ -1,7 +1,7 @@
 const userData = [
-    { username: "amk1", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 10, lastbackup: "12/12/2024" },
-    { username: "amk2", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 20, lastbackup: "12/12/2024"},
-    { username: "amk3", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 30, lastbackup: "12/12/2024"},
+    { username: "amk1", wallet: "1UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 10, lastbackup: "12/12/2024" },
+    { username: "amk2", wallet: "2UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 20, lastbackup: "12/12/2024"},
+    { username: "amk3", wallet: "3UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 30, lastbackup: "12/12/2024"},
     { username: "amk4", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 40, lastbackup: "12/12/2024"},
     { username: "amk5", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 50 },
     { username: "amk6", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 60 },
@@ -128,8 +128,8 @@ function searchUser() {
     const userDetailsDiv = document.getElementById("user-details");
     userDetailsDiv.innerHTML = "";
 
-    const filteredUser = userData.find(user => user.username.toLowerCase() === query);
-
+    const filteredUser = userData.find(user => user.wallet === query);
+    
     if (filteredUser) {
         const walletFormatted = filteredUser.wallet.length > 24
             ? `${filteredUser.wallet.slice(0, 24)}<br>${filteredUser.wallet.slice(24)}`
