@@ -3,7 +3,7 @@ const userData = [
     { username: "@Mr_shark", wallet: "UQDvdL42VpCqEw8oeNKw-FbMZ05GBAIFAViZtYP31hyDeND5", balance: 1000, lastbackup: "01/12/2024"},
     { username: "@muhammadshuayb", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 1000, lastbackup: "01/12/2024" },
     { username: "@Abideen", wallet: "UQDNQoCdhyERDhfTOz3Prd4AorRoyLmhrA6nKmSoxmCorM44", balance: 1000, lastbackup: "01/12/2024" },
-    { username: "amk5", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ5", balance: 50, lastbackup: "01/12/2024"},
+    { username: "@AliRazaJamali", wallet: "UQDfgyZcMmODGxnjSwgEI30rhlkZtNX9mNn68wDCf0lipkHf", balance: 1000, lastbackup: "01/12/2024"},
     { username: "amk6", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ6", balance: 60, lastbackup: "01/12/2024" },
     { username: "amk7", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ7", balance: 70, lastbackup: "01/12/2024" },
     { username: "amk8", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJ8", balance: 80, lastbackup: "01/12/2024"},
