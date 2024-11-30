@@ -128,8 +128,8 @@ function searchUser() {
     const userDetailsDiv = document.getElementById("user-details");
     userDetailsDiv.innerHTML = "";
 
-    // Modify to search by wallet instead of username
-    const filteredUser = userData.find(user => user.wallet.toLowerCase().includes(query));
+    // Modify to search by exact wallet match instead of partial match
+    const filteredUser = userData.find(user => user.wallet.toLowerCase() === query);
 
     if (filteredUser) {
         const walletFormatted = filteredUser.wallet.length > 24
