@@ -1,8 +1,8 @@
 const userData = [
-    { username: "amk1", wallet: "1UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 10, lastbackup: "12/12/2024" },
-    { username: "amk2", wallet: "2UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 20, lastbackup: "12/12/2024"},
-    { username: "amk3", wallet: "3UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 30, lastbackup: "12/12/2024"},
-    { username: "amk4", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 40, lastbackup: "12/12/2024"},
+    { username: "amk1", wallet: "1UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 10 },
+    { username: "amk2", wallet: "2UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 20 },
+    { username: "amk3", wallet: "3UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 30 },
+    { username: "amk4", wallet: "4UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 40 },
     { username: "amk5", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 50 },
     { username: "amk6", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 60 },
     { username: "amk7", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 70 },
@@ -101,8 +101,8 @@ const userData = [
     { username: "amk100", wallet: "UQDWoCAyIm9-pe3C0lT4Z5tweqon3rLcsPjYqnfetDJ1ygJX", balance: 1000 }
 ];
 
-const validUsername = "@DARKHOURSBACKUP";
-const validPassword = "1234";
+const validUsername = "@muhammadshuayb";
+const validPassword = "kmk";
 
 document.getElementById("login-form").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -128,8 +128,9 @@ function searchUser() {
     const userDetailsDiv = document.getElementById("user-details");
     userDetailsDiv.innerHTML = "";
 
-    const filteredUser = userData.find(user => user.wallet === query);
-    
+    // Modify to search by wallet instead of username
+    const filteredUser = userData.find(user => user.wallet.toLowerCase().includes(query));
+
     if (filteredUser) {
         const walletFormatted = filteredUser.wallet.length > 24
             ? `${filteredUser.wallet.slice(0, 24)}<br>${filteredUser.wallet.slice(24)}`
@@ -140,9 +141,8 @@ function searchUser() {
             <p><strong>Username:</strong> ${filteredUser.username}</p>
             <p><strong>Wallet Address:</strong> ${walletFormatted}</p>
             <p><strong>Balance:</strong> ${filteredUser.balance}</p>
-            <p><strong>Last Backup:</strong> ${filteredUser.lastbackup}</p>
         `;
     } else {
-        userDetailsDiv.innerHTML = `<p style="color: red;">No user found with the provided username.</p>`;
+        userDetailsDiv.innerHTML = `<p style="color: red;">No user found with the provided wallet address.</p>`;
     }
 }
